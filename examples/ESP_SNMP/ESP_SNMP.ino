@@ -1,5 +1,15 @@
-#include <ESP8266WiFi.h>
+#if defined(ESP8266)
+	#include <ESP8266WiFi.h> // ESP8266 Core WiFi Library         
+#else
+	#include <WiFi.h>        // ESP32 Core WiFi Library    
+#endif
+
 #include <WiFiUdp.h>
+
+//#define UDP_TX_PACKET_MAX_SIZE 				484
+//#define SNMP_PACKET_LENGTH 						1024
+//#define SNMP_DEBUG 										0
+
 #include <Arduino_SNMP.h>
 
 const char* ssid = "SSID";

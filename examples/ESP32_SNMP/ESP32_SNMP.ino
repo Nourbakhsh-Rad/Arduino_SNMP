@@ -1,9 +1,19 @@
-#include <WiFi.h>
+#if defined(ESP8266)
+	#include <ESP8266WiFi.h> // ESP8266 Core WiFi Library         
+#else
+	#include <WiFi.h>        // ESP32 Core WiFi Library    
+#endif
+
 #include <WiFiUdp.h>
+
+//#define UDP_TX_PACKET_MAX_SIZE 				484
+//#define SNMP_PACKET_LENGTH 						1024
+//#define SNMP_DEBUG 										0
+
 #include <Arduino_SNMP.h>
 
-const char* ssid = "Fusion";
-const char* password = "1357902468";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
 
 WiFiUDP udp;
 SNMPAgent snmp = SNMPAgent("public");  // Starts an SMMPAgent instance with the community string 'public'
