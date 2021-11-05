@@ -1,5 +1,4 @@
 # SNMP Agent For ESP8266/ESP32/Arduino (and more)
-original comment:
 
 SNMP Agent built with Arduino
 
