@@ -9,3 +9,6 @@ Not sure how it will work on basic Arduinos.
 It does let you pass in any UDP Client though, so it theoretically will work in any network environment.
 
 Pull requests/comments are welcome
+
+#
+USE NEW VERSION OF Arduino_SNMP @ https://github.com/0neblock/Arduino_SNMP
